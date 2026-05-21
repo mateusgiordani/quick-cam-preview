@@ -3,23 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Cam Preview</title>
+    <title>Free Online Camera Tester — Quick Cam Preview | Webcam Test</title>
+    <meta name="description" content="Test your webcam, USB camera, or HDMI capture card in the browser. Pick a device, see a live preview instantly. Free online camera tester — no install required.">
+    <meta name="keywords" content="camera tester, webcam test, test webcam online, USB camera test, capture card test, webcam checker, camera preview">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="mateusgiordani">
+    <link rel="canonical" href="https://mateusgiordani.github.io/quick-cam-preview/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Quick Cam Preview — Free Online Camera Tester">
+    <meta property="og:description" content="Test any webcam, USB camera, or capture card in your browser. Live preview in one click.">
+    <meta property="og:url" content="https://mateusgiordani.github.io/quick-cam-preview/">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Quick Cam Preview — Free Online Camera Tester">
+    <meta name="twitter:description" content="Test your webcam or USB camera online. Free, instant, no install.">
+    <meta name="theme-color" content="#007bff">
     <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Quick Cam Preview",
+        "alternateName": "Online Camera Tester",
+        "description": "Free browser tool to test webcams, USB cameras, and HDMI capture cards with a live preview.",
+        "url": "https://mateusgiordani.github.io/quick-cam-preview/",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires JavaScript and camera permission (getUserMedia).",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "List all video input devices",
+            "Live camera preview up to 720p",
+            "Switch between webcams and capture cards",
+            "No installation required"
+        ]
+    }
+    </script>
 </head>
 <body>
 
-<div class="container">
-    <h1>Quick Cam Preview</h1>
+<main class="container">
+    <header>
+        <h1>Quick Cam Preview</h1>
+        <p class="tagline">Free online camera tester — check your webcam in seconds</p>
+    </header>
 
-    <div class="controls">
-        <label for="videoSource">Select Camera: </label>
+    <p class="intro">
+        Use this <strong>webcam test</strong> tool to verify laptop cameras, USB webcams, and cheap
+        <strong>HDMI capture cards</strong>. Select a device, start the feed, and confirm picture and
+        video works before a call or stream. Works in Chrome, Firefox, Edge, and Safari — nothing to install.
+    </p>
+
+    <section class="controls" aria-label="Camera selection">
+        <label for="videoSource">Select camera: </label>
         <select id="videoSource"></select>
-        <button id="startBtn">Start Feed</button>
-    </div>
+        <button id="startBtn" type="button">Start feed</button>
+    </section>
 
-    <video id="videoElement" autoplay playsinline controls></video>
-    <div id="errorMessage" class="error"></div>
-</div>
+    <video id="videoElement" autoplay playsinline controls aria-label="Live camera preview"></video>
+    <div id="errorMessage" class="error" role="alert"></div>
+
+    <section class="features" aria-labelledby="features-heading">
+        <h2 id="features-heading">What you can test</h2>
+        <ul>
+            <li>Built-in laptop webcams</li>
+            <li>USB webcams and document cameras</li>
+            <li>USB HDMI / composite capture cards</li>
+            <li>Multiple cameras — switch devices from the dropdown</li>
+        </ul>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>
+        <a href="https://github.com/mateusgiordani/quick-cam-preview">Source on GitHub</a>
+        · Free camera tester for personal and troubleshooting use
+    </p>
+</footer>
 
 <script src="js/app.js"></script>
 </body>

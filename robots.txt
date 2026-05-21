@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mateusgiordani.github.io/quick-cam-preview/sitemap.xml
