@@ -1,5 +1,7 @@
 # Quick Cam Preview
 
+**Demo ao vivo:** [https://mateusgiordani.github.io/quick-cam-preview/](https://mateusgiordani.github.io/quick-cam-preview/)
+
 Ferramenta mínima no navegador para testar entradas de vídeo. Escolha uma câmera na lista e veja o feed ao vivo na hora — sem instalação, sem backend.
 
 Funciona com:
@@ -32,9 +34,9 @@ Depois acesse `http://localhost:8080`.
 3. No GitHub: **Settings → Pages → Build and deployment**
    - **Source:** Deploy from a branch
    - **Branch:** `main` / **Folder:** `/ (root)`
-4. Salve. Em alguns minutos o site fica em:
+4. Salve. Em alguns minutos o site fica no ar (este projeto):
 
-   `https://<seu-usuario>.github.io/quick-cam-preview/`
+   [https://mateusgiordani.github.io/quick-cam-preview/](https://mateusgiordani.github.io/quick-cam-preview/)
 
 > Use sempre a URL do Pages (HTTPS). Câmera em `http://` costuma ser bloqueada fora de `localhost`.
 
