@@ -81,6 +81,24 @@ button:hover {
     background-color: #0056b3;
 }
 
+.resolution-info {
+    display: inline-block;
+    min-height: 1.5em;
+    margin-bottom: 6px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: #fff;
+    background-color: #343a40;
+    border-radius: 4px;
+    letter-spacing: 0.03em;
+}
+
+.resolution-info:empty {
+    display: none;
+}
+
 video {
     width: 100%;
     max-width: 640px;
